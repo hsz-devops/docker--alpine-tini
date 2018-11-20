@@ -1,5 +1,5 @@
 FROM alpine:3.8
 
-RUN apk add --no-cache tini
+RUN apk add --no-cache tini bash
 
 ENTRYPOINT ["/sbin/tini", "--"]
